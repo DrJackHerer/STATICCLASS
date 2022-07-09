@@ -2,13 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace STATICCLASS
+namespace StaticKeyword
 {
     public static class TempConverter
     {
-        public static double FahrenheitToCelsius(doublefTemp)
+        public static double FahrenheitToCelsius(double fahrenheit)
         {
-            var cel
+            var result = ( fahrenheit - 32 ) / 1.8;
+
+            return result;
         }
+
+        public static double CelsiusToFarenheit(double celsius)
+        {
+            return (celsius * 9) / 5 + 32;
+        }
+       
     }
 }

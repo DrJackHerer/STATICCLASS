@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace STATICCLASS
+namespace StaticKeyword
 {
      class Program
     {
@@ -8,21 +8,12 @@ namespace STATICCLASS
 
         static void Main(string[] args)
         {
-            //Math MyMath = new Math();
+            var Celsius = TempConverter.FahrenheitToCelsius(68);
+            var farenheit = TempConverter.CelsiusToFarenheit(40);
 
 
-            //static class method
-            Math.Pow(5, 2);
-
-            //non static
-            Random rng = new Random();
-
-            rng.Next(0, 100);
-
-            string myName;
-            
-            
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("After Conversion:");
+            Console.WriteLine($"{farenheit}");
         }
     }
 }
